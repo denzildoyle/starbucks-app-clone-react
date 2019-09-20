@@ -1,2 +1,2 @@
-# starbucks-app-clone-react
+# React Starbucks App Clone
 A re-creation of the Starbucks App 
