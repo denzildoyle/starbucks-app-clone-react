@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Description.scss";
+
 export interface props {
     breadCrumbs: string;
     title: string;
@@ -9,7 +11,7 @@ export interface props {
 
 export default function Description({ title, description, breadCrumbs, location }: props) {
     return (
-        <div>
+        <div className="product-info">
             <p>{breadCrumbs}</p>
             <h1>{title}</h1>
             <p>{description}</p>
@@ -17,4 +19,3 @@ export default function Description({ title, description, breadCrumbs, location 
         </div>
     );
 }
-
