@@ -1,11 +1,10 @@
 import React from 'react';
-import Description from './components/Product/Description';
 import './App.css';
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Description name="test" description="description"/>
+      <h1>Hello World</h1>    
     </div>
   );
 }
