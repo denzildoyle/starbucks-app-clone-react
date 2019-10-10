@@ -5,7 +5,10 @@ import {
     Route,
     Link
 } from "react-router-dom";
+
+import Home from '../pages/Home';
 import Product from '../pages/Product';
+
 
 export default function Navmenu() {
     return (
@@ -14,10 +17,10 @@ export default function Navmenu() {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Product</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/about">About</Link>
+                            <Link to="/product">Product</Link>
                         </li>
                         <li>
                             <Link to="/users">Users</Link>
@@ -28,15 +31,8 @@ export default function Navmenu() {
                 {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
                 <Switch>
-                    <Route path="/">
-                        <Product />
-                    </Route>
-                    <Route path="/about">
-                        {/* <About /> */}
-                    </Route>
-                    <Route path="/users">
-                        {/* <Users /> */}
-                    </Route>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/product" component={Product} />
                 </Switch>
             </div>
         </Router>
