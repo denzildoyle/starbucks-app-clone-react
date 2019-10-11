@@ -7,24 +7,24 @@ import {
 } from "react-router-dom";
 
 import Home from '../pages/Home';
-import Product from '../pages/Product';
+import Order from '../pages/Order';
+import Card from '../pages/Card';
+import Gift from '../pages/Gift';
+import Store from '../pages/Store';
 
+import './Navmenu.scss';
 
 export default function Navmenu() {
     return (
         <Router>
-            <div>
+            <div className="mavmenu-component">
                 <nav>
                     <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/product">Product</Link>
-                        </li>
-                        <li>
-                            <Link to="/users">Users</Link>
-                        </li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/order">Order</Link></li>
+                        <li><Link to="/card">Card</Link></li>
+                        <li><Link to="/gift">Gift</Link></li>
+                        <li><Link to="/store">Store</Link></li>
                     </ul>
                 </nav>
 
@@ -32,7 +32,10 @@ export default function Navmenu() {
             renders the first one that matches the current URL. */}
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/product" component={Product} />
+                    <Route path="/order" component={Order} />
+                    <Route path="/card" component={Card} />
+                    <Route path="/gift" component={Gift} />
+                    <Route path="/store" component={Store} />
                 </Switch>
             </div>
         </Router>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Product() {
+export default function Home() {
     return (
-        <div className="home">
+        <div className="home-page">
             <h1>Home</h1>
         </div>
     );

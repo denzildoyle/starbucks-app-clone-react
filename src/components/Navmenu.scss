@@ -1,0 +1,19 @@
+
+.mavmenu-component{
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        padding: 30px;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, .24),
+        0 2px 2px 0 rgba(0, 0, 0, .12);
+        li{
+            margin-left: 20px;
+            list-style: none;
+
+            a{
+                color: #000000;
+                font-weight: 600;
+            }
+        }
+    }
+}
